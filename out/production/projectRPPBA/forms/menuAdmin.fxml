@@ -7,7 +7,7 @@
 <Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffccff;"
       xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="rppba.AdminMenu">
-    <Label layoutX="20.0" layoutY="20.0" text="Разрешено выполнить данный функционал:">
+    <Label layoutX="20.0" layoutY="20.0" text="Ваши функции">
         <font>
             <Font size="19.0"/>
         </font>

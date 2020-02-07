@@ -1,4 +1,4 @@
 package rppba;
 
-public class ClientMenu {
+public class MenuSupervisor {
 }

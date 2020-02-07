@@ -1,7 +1,11 @@
-package rppba;
+package authorized;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import rppba.ChangingFields;
+import rppba.Client;
+import rppba.ClientInstance;
+import rppba.LoadScene;
 
 import java.awt.*;
 
@@ -36,12 +40,12 @@ public class LogIn {
         }
     }
 
-    /*public void registerClient() {
+    public void registerUser() {
         Client client = ClientInstance.INSTANCE.getInstance();
         client.connect();
         user.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("registerClient", "Registration");
-    }*/
+        LoadScene.INSTANCE.getInstance().sceneLoader("registration", "AddUser");
+    }
 
     public static String getSupervisorName() {
         return supervisorName;
