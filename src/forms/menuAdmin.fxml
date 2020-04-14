@@ -5,10 +5,15 @@
 <?import javafx.scene.text.*?>
 
 <Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.AdminMenu">
+    <children>
+        <Button fx:id="logOut" layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" text="Выйти" />
+        <Button fx:id="addSupervisor" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#addSupervisor" prefHeight="25.0" prefWidth="290.0" text="Создать новую учетную запись руководителя" />
+        <Button fx:id="deleteManager" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteManager" prefHeight="25.0" prefWidth="270.0" text="Удалить учетную запись менеджера" />
+        <Button fx:id="addManager" layoutX="20.0" layoutY="70.0" mnemonicParsing="false" onAction="#addManager" prefHeight="25.0" prefWidth="270.0" text="Создать новую учетную запись менеджера" />
+    </children>
     <Label layoutX="20.0" layoutY="20.0" text="Ваши функции">
         <font>
             <Font size="19.0" />
         </font>
     </Label>
-    <Button layoutX="40.0" layoutY="84.0" mnemonicParsing="false" onAction="#" prefHeight="54.0" prefWidth="217.0" text="Добавление пользователя" />
 </Pane>
