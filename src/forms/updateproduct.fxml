@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="rppba.update.UpdateProduct"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.update.UpdateProduct">
+    <children>
+        <Button layoutX="471.0" layoutY="352.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #9378ff;" text="Назад" />
+        <Button layoutX="446.0" layoutY="314.0" mnemonicParsing="false" onAction="#updateProduct" style="-fx-background-color: #9378ff;" text="Редактировать" />
+        <TextField fx:id="id" layoutX="102.0" layoutY="61.0" />
+        <Label layoutX="141.0" layoutY="14.0" text="Редактирование информации о продукте">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="13.0" layoutY="64.0" text="Id продукта">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <ChoiceBox fx:id="typChoiceBox" layoutX="103.0" layoutY="190.0" onAction="#getModelProduct" prefWidth="150.0" />
+        <Label layoutX="12.0" layoutY="193.0" text="Тип">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="120.0" layoutY="135.0" text="Новые данные:">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <ChoiceBox fx:id="modelChoiceBox" layoutX="102.0" layoutY="229.0" prefWidth="150.0" />
+        <Label layoutX="12.0" layoutY="232.0" text="Модель">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
 
+        <Label layoutX="15.0" layoutY="272.0" text="Цена">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="priceChoiceBox" layoutX="103.0" layoutY="269.0" />
+
+        <ChoiceBox fx:id="shellChoiceBox" layoutX="102.0" layoutY="311.0" prefWidth="150.0" />
+        <Label layoutX="15.0" layoutY="314.0" text="Форма">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+
+        <ChoiceBox fx:id="kernelChoiceBox" layoutX="101.0" layoutY="352.0" prefWidth="150.0" />
+        <Label layoutX="13.0" layoutY="355.0" text="Стержень">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+    </children>
 </AnchorPane>

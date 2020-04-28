@@ -77,6 +77,9 @@ public class AddNewProduct {
     }
 
     public void addProduct(){
+        if (priceChoiceBox.getText().equals("")){
+            ChangingFields.display("Заполните все поля!");
+        }
         ClientInstance.INSTANCE.getInstance().send("addnewproduct " + modelChoiceBox.getValue() + " "
                 + Integer.valueOf(priceChoiceBox.getText()) + " " + typChoiceBox.getValue() + " " + shellChoiceBox.getValue()
                 + " " + kernelChoiceBox.getValue());

@@ -4,12 +4,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.ManagerMenu">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.menu.ManagerMenu">
    <children>
       <Button layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить новый продукт" />
       <Button layoutX="20.0" layoutY="121.0" mnemonicParsing="false" onAction="#addNewClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить нового клиента" />
       <Button layoutX="20.0" layoutY="161.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать клиента" />
-      <Button layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #9378FF;" text="Выйти" />
+      <Button layoutX="20.0" layoutY="201.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать продукт" />
+      <Button layoutX="15.0" layoutY="344.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #9378FF;" text="Выйти" />
       <Label layoutX="20.0" layoutY="40.0" text="Вы:">
          <font>
             <Font size="17.0" />
