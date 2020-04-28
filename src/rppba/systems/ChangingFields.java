@@ -1,4 +1,4 @@
-package rppba;
+package rppba.systems;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

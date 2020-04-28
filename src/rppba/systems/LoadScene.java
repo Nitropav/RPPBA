@@ -1,4 +1,4 @@
-package rppba;
+package rppba.systems;
 
 public enum LoadScene {
     INSTANCE;

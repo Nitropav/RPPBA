@@ -2,7 +2,9 @@ package authorized;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import rppba.*;
+import rppba.systems.ChangingFields;
+import rppba.systems.ClientInstance;
+import rppba.systems.LoadScene;
 
 public class AddUser {
 
@@ -33,6 +35,6 @@ public class AddUser {
 
     public void goBack() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuAdmin", "Menu Admin");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Menu Admin");
     }
 }

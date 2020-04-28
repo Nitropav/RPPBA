@@ -1,7 +1,8 @@
-package rppba;
+package rppba.menu;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import rppba.systems.LoadScene;
 
 public class AdminMenu {
 

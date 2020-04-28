@@ -21,7 +21,7 @@
             </font></Label>
         <TextField fx:id="user" layoutX="146.0" layoutY="148.0" prefHeight="25.0" prefWidth="320.0" text="" />
         <PasswordField fx:id="password" layoutX="146.0" layoutY="213.0" prefHeight="25.0" prefWidth="320.0" text="" />
-        <Button layoutX="260.0" layoutY="318.0" mnemonicParsing="false" onAction="#log" prefHeight="30.0" prefWidth="107.0" text="Войти" />
-        <Button layoutX="234.0" layoutY="367.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="30.0" prefWidth="160.0" text="Зарегистрироваться" />
+        <Button layoutX="260.0" layoutY="318.0" mnemonicParsing="false" onAction="#log" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #9378FF;" text="Войти" />
+
     </children>
 </Pane>

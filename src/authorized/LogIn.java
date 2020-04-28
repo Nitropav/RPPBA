@@ -2,12 +2,10 @@ package authorized;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import rppba.ChangingFields;
-import rppba.Client;
-import rppba.ClientInstance;
-import rppba.LoadScene;
-
-import java.awt.*;
+import rppba.systems.ChangingFields;
+import rppba.systems.Client;
+import rppba.systems.ClientInstance;
+import rppba.systems.LoadScene;
 
 public class LogIn {
     @FXML
@@ -22,29 +20,22 @@ public class LogIn {
         client.connect();
         client.send("login " + user.getText() + " " + password.getText());
         String resultString = ClientInstance.INSTANCE.getInstance().receiveResultString();
-        if (resultString.equals("admin")) {
+        if (resultString.equals("director")) {
             password.getScene().getWindow().hide();
-            LoadScene.INSTANCE.getInstance().sceneLoader("menuAdmin", "Admin");
+            LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Director");
         } else if (resultString.equals("manager")){
             password.getScene().getWindow().hide();
-            client.send("getmanagerdata " + user.getText() + " " + password.getText());//БД
+            client.send("getmanagerdata " + user.getText() + " " + password.getText());
             managerName = client.receiveResultString();
             LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
         }else if (resultString.equals("supervisor")){
             password.getScene().getWindow().hide();
-            client.send("getclientdata " + user.getText() + " " + password.getText());//БД менять
+            client.send("getclientdata " + user.getText() + " " + password.getText());
             supervisorName = client.receiveResultString();
             LoadScene.INSTANCE.getInstance().sceneLoader("menuSupervisor", "Supervisor");
         }else {
             ChangingFields.display("Неверный логин или пароль!");
         }
-    }
-
-    public void registerUser() {
-        Client client = ClientInstance.INSTANCE.getInstance();
-        client.connect();
-        user.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("registration", "AddUser");
     }
 
     public static String getSupervisorName() {

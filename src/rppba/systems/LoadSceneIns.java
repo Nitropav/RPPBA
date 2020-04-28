@@ -1,4 +1,4 @@
-package rppba;
+package rppba.systems;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

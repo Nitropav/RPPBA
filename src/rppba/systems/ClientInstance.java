@@ -1,4 +1,6 @@
-package rppba;
+package rppba.systems;
+
+import rppba.systems.Client;
 
 public enum ClientInstance {
     INSTANCE;

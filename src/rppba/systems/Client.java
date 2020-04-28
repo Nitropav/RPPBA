@@ -1,8 +1,9 @@
-package rppba;
+package rppba.systems;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.net.Socket;
+import java.net.*;
+import java.util.ArrayList;
 
 public class Client {
     private Socket socketClient;
@@ -19,6 +20,14 @@ public class Client {
         }
     }
 
+    public void send(Object obj) {
+        try {
+            outputStream.writeObject(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public String receiveResultString() {
         String result = null;
         try {
@@ -29,14 +38,6 @@ public class Client {
         return result;
     }
 
-    public void send(Object obj) {
-        try {
-            outputStream.writeObject(obj);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public boolean receiveResultBool() {
         boolean result = true;
         try {
@@ -45,5 +46,14 @@ public class Client {
             e.printStackTrace();
         }
         return result;
+    }
+
+    public ArrayList<String> receiveResultList() {
+        ArrayList<String> list = null;
+        try {
+            list = (ArrayList<String>)inputStream.readObject();
+        } catch (Exception e) {
+        }
+        return list;
     }
 }

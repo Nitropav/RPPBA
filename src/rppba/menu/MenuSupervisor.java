@@ -1,4 +1,4 @@
-package rppba;
+package rppba.menu;
 
 public class MenuSupervisor {
 }
