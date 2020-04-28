@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.DeleteManager">
+<children>
+    <Button fx:id="deleteManager" layoutX="430.0" layoutY="240.0" mnemonicParsing="false" onAction="#deleteManager" text="Удалить" />
+    <TextField fx:id="name" layoutX="50.0" layoutY="90.0" />
+    <TextField fx:id="surname" layoutX="90.0" layoutY="120.0" />
+    <Label layoutX="210.0" layoutY="10.0" text="Удалить менеджера">
+        <font>
+            <Font size="19.0" />
+        </font></Label>
+    <Label layoutX="20.0" layoutY="50.0" text="Введите имя и фамилию менеджера">
+        <font>
+            <Font size="19.0" />
+        </font></Label>
+    <Label layoutX="20.0" layoutY="150.0" text="Введите логин менеджера">
+        <font>
+            <Font size="19.0" />
+        </font></Label>
+    <Label layoutX="20.0" layoutY="90.0" text="Имя">
+        <font>
+            <Font size="14.0" />
+        </font></Label>
+    <Label layoutX="20.0" layoutY="120.0" text="Фамилия">
+        <font>
+            <Font size="14.0" />
+        </font></Label>
+    <TextField fx:id="login" layoutX="73.0" layoutY="190.0" />
+    <Label layoutX="20.0" layoutY="190.0" text="Логин">
+        <font>
+            <Font size="14.0" />
+        </font></Label>
+    <Button layoutX="510.0" layoutY="240.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="58.0" text="Назад" />
+</children>
+</Pane>
