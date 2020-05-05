@@ -34,6 +34,16 @@ public class ManagerMenu {
         LoadScene.INSTANCE.getInstance().sceneLoader("updateproduct", "Update product");
     }
 
+    public void addProduction(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("addproduction", "Add production");
+    }
+
+    public void ordersMenu(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Orders menu");
+    }
+
     public void logOut() {
         name.getScene().getWindow().hide();
         LoadScene.INSTANCE.getInstance().sceneLoader("login", "Log IN");

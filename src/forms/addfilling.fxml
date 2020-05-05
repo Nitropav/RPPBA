@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.add.AddFilling">
+    <Button layoutX="276.0" layoutY="402.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #9378FF;" text="Назад" />
+    <Button layoutX="73.0" layoutY="250.0" mnemonicParsing="false" onAction="#addFilling" style="-fx-background-color: #9378FF;" text="Добавить" />
+    <Button layoutX="255.0" layoutY="364.0" mnemonicParsing="false" onAction="#addDate" style="-fx-background-color: #9378FF;" text="Выбрать дату" />
+    <Label layoutX="140.0" layoutY="29.0" text="Добавление информации о наполнении">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="24.0" layoutY="79.0" text="Выберите модель">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <ChoiceBox fx:id="modelChoiceBox" layoutX="122.0" layoutY="109.0" prefWidth="150.0" />
+    <Label layoutX="24.0" layoutY="112.0" text="Модель">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="25.0" layoutY="147.0" text="Введите количество товара">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="24.0" layoutY="180.0" text="Количество">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="countProduct" layoutX="123.0" layoutY="177.0" />
+    <Label fx:id="name" layoutX="50.0" layoutY="44.0" text="Label">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+</AnchorPane>
