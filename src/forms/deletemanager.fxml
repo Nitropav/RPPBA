@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Font?>
-<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.DeleteManager">
+<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffccff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.controller.DeleteManager">
 <children>
     <Button fx:id="deleteManager" layoutX="430.0" layoutY="240.0" mnemonicParsing="false" onAction="#deleteManager" text="Удалить" />
     <TextField fx:id="name" layoutX="50.0" layoutY="90.0" />

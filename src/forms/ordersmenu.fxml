@@ -83,4 +83,5 @@
             <Font size="14.0" />
         </font>
     </Label>
+   <Button layoutX="361.0" layoutY="451.0" onAction="#viewOrders" mnemonicParsing="false" style="-fx-background-color: #9378FF;" text="Просмотр заказов" />
 </Pane>

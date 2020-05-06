@@ -79,6 +79,11 @@ public class OrderMenu {
         LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Add filling");
     }
 
+    public void viewOrders(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("viewordersidclient", "View orders");
+    }
+
     public void goBack() {
         name.getScene().getWindow().hide();
         LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");

@@ -5,52 +5,57 @@
 <?import javafx.scene.text.*?>
 
 <Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.add.AddNewProduct">
-    <Button layoutX="261.0" layoutY="340.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #9378FF;" text="Добавить" />
-    <Button layoutX="270.0" layoutY="381.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #9378FF;" text="Назад" />
-    <ChoiceBox fx:id="typChoiceBox" layoutX="80.0" layoutY="70.0" onAction="#getModel" prefWidth="150.0" />
-    <Label layoutX="20.0" layoutY="40.0" text="Выберите тип">
+    <Button layoutX="262.0" layoutY="397.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #9378FF;" text="Добавить" />
+    <Button layoutX="270.0" layoutY="437.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #9378FF;" text="Назад" />
+    <ChoiceBox fx:id="typChoiceBox" layoutX="89.0" layoutY="126.0" onAction="#getModel" prefWidth="150.0" />
+    <Label layoutX="102.0" layoutY="26.0" prefHeight="28.0" prefWidth="398.0" text="Добавление информации о новом продукте">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <Label layoutX="2100.0" layoutY="100.0" text="Выберите тип">
         <font>
             <Font size="17.0" />
         </font>
     </Label>
-    <Label layoutX="20.0" layoutY="70.0" text="Тип">
+    <Label layoutX="21.0" layoutY="129.0" text="Тип">
         <font>
             <Font size="14.0" />
         </font>
     </Label>
-    <Label layoutX="20.0" layoutY="90.0" text="Выберите модель">
+    <Label layoutX="21.0" layoutY="151.0" text="Выберите модель">
         <font>
             <Font size="17.0" />
         </font></Label>
-    <ChoiceBox fx:id="modelChoiceBox" layoutX="80.0" layoutY="120.0" prefWidth="150.0" />
-    <Label layoutX="20.0" layoutY="120.0" text="Модель">
+    <ChoiceBox fx:id="modelChoiceBox" layoutX="89.0" layoutY="177.0" prefWidth="150.0" />
+    <Label layoutX="21.0" layoutY="179.0" text="Модель">
         <font>
             <Font size="14.0" />
         </font></Label>
-    <Label layoutX="20.0" layoutY="140.0" text="Введите цену">
+    <Label layoutX="21.0" layoutY="199.0" text="Введите цену">
         <font>
             <Font size="17.0" />
         </font></Label>
-    <Label layoutX="20.0" layoutY="170.0" text="Цена">
+    <Label layoutX="21.0" layoutY="225.0" text="Цена">
         <font>
             <Font size="14.0" />
         </font></Label>
-    <TextField fx:id="priceChoiceBox" layoutX="81.0" layoutY="168.0" />
-    <Label layoutX="20.0" layoutY="190.0" text="Выберите форму">
+    <TextField fx:id="priceChoiceBox" layoutX="90.0" layoutY="225.0" />
+    <Label layoutX="21.0" layoutY="250.0" text="Выберите форму">
         <font>
             <Font size="17.0" />
         </font></Label>
-    <ChoiceBox fx:id="shellChoiceBox" layoutX="80.0" layoutY="220.0" prefWidth="150.0" />
-    <Label layoutX="20.0" layoutY="220.0" text="Форма">
+    <ChoiceBox fx:id="shellChoiceBox" layoutX="89.0" layoutY="280.0" prefWidth="150.0" />
+    <Label layoutX="21.0" layoutY="280.0" text="Форма">
         <font>
             <Font size="14.0" />
         </font></Label>
-    <Label layoutX="20.0" layoutY="240.0" text="Выберите стержень">
+    <Label layoutX="21.0" layoutY="305.0" text="Выберите стержень">
         <font>
             <Font size="17.0" />
         </font></Label>
-    <ChoiceBox fx:id="kernelChoiceBox" layoutX="85.0" layoutY="270.0" prefWidth="150.0" />
-    <Label layoutX="20.0" layoutY="270.0" text="Стержень">
+    <ChoiceBox fx:id="kernelChoiceBox" layoutX="89.0" layoutY="338.0" prefWidth="150.0" />
+    <Label layoutX="21.0" layoutY="340.0" text="Стержень">
         <font>
             <Font size="14.0" />
         </font></Label>
