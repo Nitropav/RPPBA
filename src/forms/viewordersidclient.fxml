@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="300.0" prefWidth="640.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.controller.ViewOrdersClient">
+    <Label layoutX="20.0" layoutY="10.0" text="Вывод информации о заказах">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <TableView fx:id="ordersTable" layoutX="15.0" layoutY="50.0" prefHeight="200.0" prefWidth="609.0">
+        <columns>
+            <TableColumn fx:id="numberColumn" editable="false" prefWidth="54.0" text="Номер" />
+            <TableColumn fx:id="priceColumn" editable="false" prefWidth="87.0" text="Цена" />
+            <TableColumn fx:id="addressColumn" editable="false" prefWidth="85.0" text="Адрес" />
+            <TableColumn fx:id="clientColumn" editable="false" prefWidth="93.59996032714844" text="Клиент" />
+            <TableColumn fx:id="deliveryColumn" editable="false" prefWidth="98.4000244140625" text="Вид доставки" />
+            <TableColumn fx:id="statesColumn" editable="false" prefWidth="84.5999755859375" text="Состояние" />
+            <TableColumn fx:id="dateColumn" editable="false" prefWidth="104.20001220703125" text="Дата" />
+        </columns>
+    </TableView>
+    <Button layoutX="20.0" layoutY="265.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9378FF;" text="Удалить" />
+    <Button fx:id="back" layoutX="550.0" layoutY="265.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9378FF;" text="Назад" />
+    <Label layoutX="427.0" layoutY="24.0" text="Поиск">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="search" layoutX="475.0" layoutY="21.0" />
+   <Button layoutX="427.0" layoutY="265.0" mnemonicParsing="false" onAction="#saveToFile" style="-fx-background-color: #9378FF;" text="Сохранить в файл" />
+</Pane>
