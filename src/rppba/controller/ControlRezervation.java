@@ -13,7 +13,7 @@ import rppba.systems.LoadScene;
 
 import java.util.ArrayList;
 
-public class Rezervation {
+public class ControlRezervation {
     @FXML
     private TextField search;
     @FXML
@@ -56,7 +56,7 @@ public class Rezervation {
     }
 
     private void fillTableView() {
-        ClientInstance.INSTANCE.getInstance().send("getrezerorders " + search.getText());
+        ClientInstance.INSTANCE.getInstance().send("getshipOrders " + search.getText());
         ArrayList<String> list = ClientInstance.INSTANCE.getInstance().receiveResultList();
         ObservableList<InformationOrder> informationOrders = FXCollections.observableArrayList();
         String[] orderString;
@@ -82,16 +82,16 @@ public class Rezervation {
         ordersTable.setItems(informationOrders);
     }
 
-    public void rezervOrders(){
+    public void controlRezerv(){
         if (ordersTable.getSelectionModel().getSelectedItem() == null) {
             ChangingFields.display("Выберите заказ!");
         } else {
-            ClientInstance.INSTANCE.getInstance().send("rezerorders " + ordersTable.getSelectionModel().
+            ClientInstance.INSTANCE.getInstance().send("notrezervorders " + ordersTable.getSelectionModel().
                     getSelectedItem().getOrderNumber());
         }
         if (ClientInstance.INSTANCE.getInstance().receiveResultBool()) {
             fillTableView();
-            ChangingFields.display("Зарезервировано!");
+            ChangingFields.display("Резерватия убрана!");
         } else {
             ChangingFields.display("Ошибка!");
         }

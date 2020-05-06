@@ -44,6 +44,16 @@ public class ManagerMenu {
         LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Orders menu");
     }
 
+    public void shipOrder(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("shipment", "Menu shipment");
+    }
+
+    public void rezervOrder(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("rezervation", "Rezrvation orders");
+    }
+
     public void logOut() {
         name.getScene().getWindow().hide();
         LoadScene.INSTANCE.getInstance().sceneLoader("login", "Log IN");

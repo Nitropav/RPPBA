@@ -4,10 +4,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.add.AddFilling">
-    <Button layoutX="276.0" layoutY="402.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #9378FF;" text="Назад" />
-    <Button layoutX="73.0" layoutY="250.0" mnemonicParsing="false" onAction="#addFilling" style="-fx-background-color: #9378FF;" text="Добавить" />
-    <Button layoutX="255.0" layoutY="364.0" mnemonicParsing="false" onAction="#addDate" style="-fx-background-color: #9378FF;" text="Выбрать дату" />
+<AnchorPane prefHeight="358.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.add.AddFilling">
+    <Button layoutX="276.0" layoutY="311.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #9378FF;" text="Назад" />
+    <Button layoutX="40.0" layoutY="217.0" mnemonicParsing="false" onAction="#addFilling" style="-fx-background-color: #9378FF;" text="Добавить" />
+    <Button layoutX="255.0" layoutY="273.0" mnemonicParsing="false" onAction="#addDate" style="-fx-background-color: #9378FF;" text="Выбрать дату" />
     <Label layoutX="140.0" layoutY="29.0" text="Добавление информации о наполнении">
         <font>
             <Font size="16.0" />

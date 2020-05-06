@@ -5,15 +5,23 @@
 <?import javafx.scene.text.*?>
 
 <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.menu.AdminMenu">
-    <children>
-        <Button fx:id="logOut" layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" text="Выйти" />
-        <Button fx:id="addSupervisor" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#addSupervisor" prefHeight="25.0" prefWidth="290.0" text="Создать новую учетную запись руководителя" />
-        <Button fx:id="deleteManager" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onAction="#deleteManager" prefHeight="25.0" prefWidth="270.0" text="Удалить учетную запись менеджера" />
-        <Button fx:id="addManager" layoutX="20.0" layoutY="70.0" mnemonicParsing="false" onAction="#addManager" prefHeight="25.0" prefWidth="270.0" text="Создать новую учетную запись менеджера" />
-    </children>
-    <Label layoutX="20.0" layoutY="20.0" text="Ваши функции">
+    <Label layoutX="210.0" layoutY="30.0" text="Меню руководителя">
         <font>
             <Font size="19.0" />
         </font>
     </Label>
+   <Button layoutX="265.0" layoutY="336.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #9378FF;" text="Выйти" />
+    <Button layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить новый продукт" />
+    <Button layoutX="20.0" layoutY="121.0" mnemonicParsing="false" onAction="#addNewClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить нового клиента" />
+    <Button layoutX="20.0" layoutY="161.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать клиента" />
+    <Button layoutX="20.0" layoutY="201.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать продукт" />
+    <Button layoutX="20.0" layoutY="245.0" mnemonicParsing="false" onAction="#addProduction" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить производство" />
+    <Button layoutX="20.0" layoutY="284.0" mnemonicParsing="false" onAction="#ordersMenu" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Меню заказа" />
+    <Button layoutX="300.0" layoutY="79.0" mnemonicParsing="false" onAction="#shipOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Отгрузка" />
+    <Label fx:id="name" layoutX="50.0" layoutY="44.0" text="Label">
+        <font>
+            <Font size="14.0" />
+        </font></Label>
+    <Button layoutX="300.0" layoutY="121.0" mnemonicParsing="false" onAction="#rezervOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Резервирование" />
+   <Button layoutX="300.0" layoutY="161.0" mnemonicParsing="false" onAction="#controlRezerv" style="-fx-background-color: #9378FF;" prefHeight="25.0" prefWidth="240.0" text="Управление резервированием" />
 </Pane>

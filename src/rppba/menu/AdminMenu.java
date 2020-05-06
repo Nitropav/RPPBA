@@ -1,31 +1,66 @@
 package rppba.menu;
 
+import authorized.LogIn;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import rppba.systems.LoadScene;
 
 public class AdminMenu {
 
     @FXML
-    private Button addManager;
+    private Label name;
 
-    public void addManager() {
-        addManager.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addmanager", "Add worker");
+    public void initialize() {
+        name.setText(LogIn.getManager());
     }
 
-    public void addSupervisor(){
-        addManager.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addsupervisor", "Add supervisor");
+    public void addProduct() {
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("addnewproduct", "Add new product");
+    }
+
+    public void addNewClient(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("addnewclient", "Add new client");
+    }
+
+    public void updateClient(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("updateclient", "Update client");
+    }
+
+    public void updateProduct(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("updateproduct", "Update product");
+    }
+
+    public void addProduction(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("addproduction", "Add production");
+    }
+
+    public void ordersMenu(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Orders menu");
+    }
+
+    public void shipOrder(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("shipment", "Menu shipment");
+    }
+
+    public void rezervOrder(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("rezervation", "Rezrvation orders");
+    }
+
+    public void controlRezerv(){
+        name.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("controlrezervation", "Control rezervation");
     }
 
     public void logOut() {
-        addManager.getScene().getWindow().hide();
+        name.getScene().getWindow().hide();
         LoadScene.INSTANCE.getInstance().sceneLoader("login", "Log IN");
-    }
-
-    public void deleteManager(){
-        addManager.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("deletemanager", "Delete Manager");
     }
 }
