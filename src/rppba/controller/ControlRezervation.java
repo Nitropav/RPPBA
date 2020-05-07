@@ -91,7 +91,7 @@ public class ControlRezervation {
         }
         if (ClientInstance.INSTANCE.getInstance().receiveResultBool()) {
             fillTableView();
-            ChangingFields.display("Резерватия убрана!");
+            ChangingFields.display("Резервация убрана!");
         } else {
             ChangingFields.display("Ошибка!");
         }

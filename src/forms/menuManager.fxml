@@ -23,5 +23,6 @@
             <Font size="14.0" />
          </font></Label>
       <Button layoutX="300.0" layoutY="121.0" mnemonicParsing="false" onAction="#rezervOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Резервирование" />
+      <Button layoutX="299.0" layoutY="161.0" mnemonicParsing="false" onAction="#loyalityClient" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Определение лояльности клиента" />
    </children>
 </AnchorPane>

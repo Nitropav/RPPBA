@@ -3,6 +3,8 @@ package rppba.menu;
 import authorized.LogIn;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import rppba.systems.ChangingFields;
+import rppba.systems.ClientInstance;
 import rppba.systems.LoadScene;
 
 public class ManagerMenu {
@@ -52,6 +54,15 @@ public class ManagerMenu {
     public void rezervOrder(){
         name.getScene().getWindow().hide();
         LoadScene.INSTANCE.getInstance().sceneLoader("rezervation", "Rezrvation orders");
+    }
+
+    public void loyalityClient(){
+        ClientInstance.INSTANCE.getInstance().send("loyaltyupdate");
+        if (ClientInstance.INSTANCE.getInstance().receiveResultBool()) {
+            ChangingFields.display("Данные обновлены успешно!");
+        } else {
+            ChangingFields.display("Ошибка обновлены данных!");
+        }
     }
 
     public void logOut() {

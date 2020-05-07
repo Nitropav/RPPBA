@@ -75,8 +75,12 @@ public class OrderMenu {
         } else {
             ChangingFields.display("Ошибка добавления данных!");
         }
-        name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Add filling");
+        if (uslovie.getText().length() == 0 || address.getText().length() == 0){
+            System.out.println("Faild");
+        }else {
+            name.getScene().getWindow().hide();
+            LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Add filling");
+        }
     }
 
     public void viewOrders(){
