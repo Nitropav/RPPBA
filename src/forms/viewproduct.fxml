@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.controller.ViewProduct">
+    <Label layoutX="157.0" layoutY="19.0" text="Вывод информации о продуктах">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <TableView fx:id="ordersTable" layoutX="52.0" layoutY="100.0" prefHeight="200.0" prefWidth="507.0">
+        <columns>
+            <TableColumn fx:id="numberColumn" editable="false" prefWidth="54.0" text="Номер" />
+            <TableColumn fx:id="modelColumn" editable="false" prefWidth="87.0" text="Модель" />
+            <TableColumn fx:id="priceColumn" editable="false" prefWidth="85.0" text="Цена" />
+            <TableColumn fx:id="typColumn" editable="false" prefWidth="93.59996032714844" text="Тип" />
+            <TableColumn fx:id="shellColumn" editable="false" prefWidth="98.4000244140625" text="Тип оболочки" />
+            <TableColumn fx:id="kernelColumn" editable="false" prefWidth="84.5999755859375" text="Тип стержня" />
+        </columns>
+    </TableView>
+    <Button fx:id="back" layoutX="262.0" layoutY="339.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9378FF;" text="Назад" />
+    <Label layoutX="52.0" layoutY="71.0" text="Поиск">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="search" layoutX="103.0" layoutY="68.0" />
+</Pane>

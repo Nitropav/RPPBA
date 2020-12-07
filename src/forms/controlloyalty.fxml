@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rppba.controller.ControlLoyalty">
+    <Label layoutX="181.0" layoutY="25.0" text="Информация о лояльности">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <TableView fx:id="ordersTable" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="360.0">
+        <columns>
+            <TableColumn fx:id="numberColumn" editable="false" prefWidth="54.0" text="Номер" />
+            <TableColumn fx:id="nameColumn" editable="false" prefWidth="105.20001220703125" text="Название" />
+            <TableColumn fx:id="saleColumn" editable="false" prefWidth="101.99995422363281" text="Скидка, %" />
+            <TableColumn fx:id="boundaryTelColumn" editable="false" prefWidth="98.4000244140625" text="Граница" />
+        </columns>
+    </TableView>
+    <TextField fx:id="numberloyalty" layoutX="403.0" layoutY="127.0" />
+    <TextField fx:id="saleloyalty" layoutX="403.0" layoutY="188.0" />
+    <TextField fx:id="boundaryloyalty" layoutX="403.0" layoutY="253.0" />
+    <Button fx:id="back" layoutX="262.0" layoutY="333.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9378FF;" text="Назад" />
+    <Label layoutX="18.0" layoutY="71.0" text="Поиск">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="390.0" layoutY="100.0" text="Введите номер лояльности">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="405.0" layoutY="160.0" text="Введите новую скидку">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="400.0" layoutY="225.0" text="Введите новую границу">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="search" layoutX="65.0" layoutY="69.0" />
+   <Button layoutX="428.0" layoutY="333.0" onAction="#updateLoyalty" mnemonicParsing="false" style="-fx-background-color: #9378FF;" text="Редактировать" />
+</Pane>
