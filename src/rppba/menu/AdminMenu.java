@@ -16,47 +16,47 @@ public class AdminMenu {
 
     public void addProduct() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addnewproduct", "Add new product");
+        LoadScene.INSTANCE.getInstance().sceneLoader("addnewproduct", "Меню добавление нового продукта");
     }
 
     public void addNewClient(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addnewclient", "Add new client");
+        LoadScene.INSTANCE.getInstance().sceneLoader("addnewclient", "Меню добавление нового клиента");
     }
 
     public void updateClient(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("updateclient", "Update client");
+        LoadScene.INSTANCE.getInstance().sceneLoader("updateclient", "Меню изменения данных клиента");
     }
 
     public void updateProduct(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("updateproduct", "Update product");
+        LoadScene.INSTANCE.getInstance().sceneLoader("updateproduct", "Меню изменения данных о продукте");
     }
 
     public void addProduction(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addproduction", "Add production");
+        LoadScene.INSTANCE.getInstance().sceneLoader("addproduction", "Меню добавления производства");
     }
 
     public void ordersMenu(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Orders menu");
+        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Меню заказа");
     }
 
     public void shipOrder(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("shipment", "Menu shipment");
+        LoadScene.INSTANCE.getInstance().sceneLoader("shipment", "Меню отгрузки товара");
     }
 
     public void rezervOrder(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("rezervation", "Rezrvation orders");
+        LoadScene.INSTANCE.getInstance().sceneLoader("rezervation", "Меню резервации заказа");
     }
 
     public void controlRezerv(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("controlrezervation", "Control rezervation");
+        LoadScene.INSTANCE.getInstance().sceneLoader("controlrezervation", "Меню контроля резервацией");
     }
 
     public void logOut() {

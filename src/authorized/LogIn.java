@@ -22,12 +22,12 @@ public class LogIn {
         String resultString = ClientInstance.INSTANCE.getInstance().receiveResultString();
         if (resultString.equals("director")) {
             password.getScene().getWindow().hide();
-            LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Director");
+            LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Меню директор");
         } else if (resultString.equals("manager")){
             password.getScene().getWindow().hide();
             client.send("getmanagerdata " + user.getText() + " " + password.getText());
             managerName = client.receiveResultString();
-            LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
+            LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
         }else if (resultString.equals("supervisor")){
             password.getScene().getWindow().hide();
             client.send("getclientdata " + user.getText() + " " + password.getText());

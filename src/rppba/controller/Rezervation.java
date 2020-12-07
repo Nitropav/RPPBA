@@ -93,12 +93,12 @@ public class Rezervation {
             fillTableView();
             ChangingFields.display("Зарезервировано!");
         } else {
-            ChangingFields.display("Ошибка!");
+            ChangingFields.display("Ошибка резервации!");
         }
     }
 
     public void goBack() {
         ordersTable.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager menu");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }

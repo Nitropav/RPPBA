@@ -37,11 +37,11 @@ public class AddDate {
             ChangingFields.display("Ошибка добавления данных!");
         }
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager menu");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 
     public void goBack() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Add filling");
+        LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Меню добавления наполнения заказа");
     }
 }

@@ -33,6 +33,6 @@ public class DeleteManager {
 
     public void goBack() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Admin");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuDirector", "Меню директора");
     }
 }

@@ -94,6 +94,6 @@ public class UpdateProduct {
 
     public void goBack() {
         typChoiceBox.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }

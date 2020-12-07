@@ -45,17 +45,17 @@ public class AddFilling {
         if (ClientInstance.INSTANCE.getInstance().receiveResultBool()) {
             ChangingFields.display("Данные добавлены успешно!");
         } else {
-            ChangingFields.display("Ошибка добавления данных!");
+            ChangingFields.display("Количество продуктов превышает остаток!");
         }
     }
 
     public void addDate(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("adddate", "Add date");
+        LoadScene.INSTANCE.getInstance().sceneLoader("adddate", "Меню добавления даты заказа");
     }
 
     public void goBack() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }

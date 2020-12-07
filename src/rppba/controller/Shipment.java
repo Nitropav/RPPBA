@@ -93,12 +93,12 @@ public class Shipment {
             fillTableView();
             ChangingFields.display("Отгружено!");
         } else {
-            ChangingFields.display("Ошибка!");
+            ChangingFields.display("Ошибка отгрузки!");
         }
     }
 
     public void goBack() {
         ordersTable.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager menu");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }

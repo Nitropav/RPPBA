@@ -29,5 +29,6 @@
         </font>
     </Label>
     <TextField fx:id="search" layoutX="475.0" layoutY="21.0" />
-   <Button layoutX="427.0" layoutY="265.0" mnemonicParsing="false" onAction="#saveToFile" style="-fx-background-color: #9378FF;" text="Сохранить в файл" />
+   <Button layoutX="107.0" layoutY="265.0" mnemonicParsing="false" onAction="#saveToFile" style="-fx-background-color: #9378FF;" text="Сохранить в файл" />
+   <Button layoutX="357.0" layoutY="265.0" mnemonicParsing="false" onAction="#viewProduction" style="-fx-background-color: #9378FF;" text="Просмотр наполнения заказа" />
 </Pane>

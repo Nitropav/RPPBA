@@ -10,10 +10,10 @@
       <Button layoutX="20.0" layoutY="121.0" mnemonicParsing="false" onAction="#addNewClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить нового клиента" />
       <Button layoutX="20.0" layoutY="161.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать клиента" />
       <Button layoutX="20.0" layoutY="201.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Редактировать продукт" />
-      <Button layoutX="20.0" layoutY="245.0" mnemonicParsing="false" onAction="#addProduction" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить производство" />
-      <Button layoutX="20.0" layoutY="284.0" mnemonicParsing="false" onAction="#ordersMenu" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Меню заказа" />
-      <Button layoutX="264.0" layoutY="336.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #9378FF;" text="Выйти" />
-      <Button layoutX="300.0" layoutY="79.0" mnemonicParsing="false" onAction="#shipOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Отгрузка" />
+      <Button layoutX="20.0" layoutY="278.0" mnemonicParsing="false" onAction="#addProduction" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Добавить производство" />
+      <Button layoutX="299.0" layoutY="80.0" mnemonicParsing="false" onAction="#ordersMenu" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Меню заказа" />
+      <Button layoutX="504.0" layoutY="345.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #9378FF;" text="Выйти" />
+      <Button layoutX="299.0" layoutY="160.0" mnemonicParsing="false" onAction="#shipOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Отгрузка" />
       <Label layoutX="220.0" layoutY="30.0" text="Меню менеджера">
          <font>
             <Font size="19.0" />
@@ -22,6 +22,11 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button layoutX="300.0" layoutY="121.0" mnemonicParsing="false" onAction="#rezervOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Резервирование" />
+      <Button layoutX="299.0" layoutY="120.0" mnemonicParsing="false" onAction="#rezervOrder" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Резервирование" />
+      <Button layoutX="299.0" layoutY="200.0" mnemonicParsing="false" onAction="#loyalityClient" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Определение лояльности клиента" />
+      <Button layoutX="299.0" layoutY="239.0" mnemonicParsing="false" onAction="#viewClient" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Просмотр информации о клиентах" />
+      <Button layoutX="299.0" layoutY="278.0" mnemonicParsing="false" onAction="#viewResidual" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Просмотр остатка" />
+      <Button layoutX="20.0" layoutY="239.0" mnemonicParsing="false" onAction="#viewProduct" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Просмотр данных о продукте" />
+      <Button layoutX="20.0" layoutY="318.0" mnemonicParsing="false" onAction="#controlLoyalty" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: #9378FF;" text="Управление лояльностью" />
    </children>
 </AnchorPane>

@@ -122,8 +122,13 @@ public class ViewOrdersClient {
         }
     }
 
+    public void viewProduction(){
+        ordersTable.getScene().getWindow().hide();
+        LoadScene.INSTANCE.getInstance().sceneLoader("viewproduction", "Меню просмотра наполнения заказов");
+    }
+
     public void goBack() {
         ordersTable.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Orders menu");
+        LoadScene.INSTANCE.getInstance().sceneLoader("ordersmenu", "Меню заказа");
     }
 }

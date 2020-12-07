@@ -52,6 +52,6 @@ public class AddProduction {
 
     public void goBack() {
         modelChoiceBox.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }

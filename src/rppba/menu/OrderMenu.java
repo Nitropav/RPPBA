@@ -54,7 +54,7 @@ public class OrderMenu {
 
     public void addNewClient(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("addnewclient", "Add new client");
+        LoadScene.INSTANCE.getInstance().sceneLoader("addnewclient", "Меню добавления нового клиента");
     }
 
     public void addFilling(){
@@ -79,17 +79,17 @@ public class OrderMenu {
             System.out.println("Faild");
         }else {
             name.getScene().getWindow().hide();
-            LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Add filling");
+            LoadScene.INSTANCE.getInstance().sceneLoader("addfilling", "Меню добавления наполнения заказа");
         }
     }
 
     public void viewOrders(){
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("viewordersidclient", "View orders");
+        LoadScene.INSTANCE.getInstance().sceneLoader("viewordersidclient", "Меню просмотра всех заказов");
     }
 
     public void goBack() {
         name.getScene().getWindow().hide();
-        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Manager");
+        LoadScene.INSTANCE.getInstance().sceneLoader("menuManager", "Меню менеджера");
     }
 }
